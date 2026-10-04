@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="DeepOffer 网申助手浏览器扩展隐私政策" />
+  <title>DeepOffer 网申助手浏览器扩展隐私政策</title>
+  <style>
+    :root {
+      color: #182033;
+      background: #f6f8fc;
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      font-synthesis: none;
+      line-height: 1.75;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(820px, calc(100% - 32px)); margin: 48px auto 72px; }
+    header, section {
+      background: #fff;
+      border: 1px solid #e5e9f2;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(31, 50, 89, .06);
+    }
+    header { padding: 36px 40px; border-top: 4px solid #4f46e5; }
+    section { margin-top: 18px; padding: 28px 40px; }
+    h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 38px); line-height: 1.25; }
+    h2 { margin: 0 0 12px; font-size: 21px; line-height: 1.4; }
+    p { margin: 10px 0; }
+    ul { margin: 10px 0; padding-left: 1.3em; }
+    li + li { margin-top: 8px; }
+    .meta, .muted { color: #5f6b82; }
+    .notice {
+      margin-top: 20px;
+      padding: 14px 16px;
+      border-left: 3px solid #4f46e5;
+      background: #f4f5ff;
+      border-radius: 8px;
+    }
+    a { color: #4338ca; text-underline-offset: 3px; }
+    code { padding: 2px 5px; border-radius: 5px; background: #f1f3f8; font-family: inherit; }
+    footer { padding: 28px 8px 0; color: #6b7280; text-align: center; font-size: 14px; }
+    @media (max-width: 600px) {
+      main { margin-top: 20px; }
+      header, section { padding: 24px 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>DeepOffer 网申助手浏览器扩展隐私政策</h1>
+      <p class="meta">生效日期：2026 年 9 月 8 日</p>
+      <p class="notice">
+        本政策说明 DeepOffer 运营团队在你使用“DeepOffer 网申助手”浏览器扩展时，
+        如何处理和保护你的信息。安装或使用扩展前，请阅读本政策。
+      </p>
+    </header>
+
+    <section>
+      <h2>1. 扩展的用途</h2>
+      <p>
+        DeepOffer 浏览器扩展用于在你登录并选择简历后，识别招聘申请表字段，
+        根据你的主动操作辅助填写已有简历信息，供你复核后自行提交。
+      </p>
+      <p>
+        扩展不会替你提交申请、删除页面内容、勾选协议或上传附件，也不会在你未主动开始填写时提交网申。
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 我们处理的信息</h2>
+      <ul>
+        <li><strong>账号与认证信息：</strong>微信登录产生的账号标识，以及插件访问令牌和刷新令牌，用于登录、保持会话并保护接口访问。</li>
+        <li><strong>简历与求职信息：</strong>你主动导入、录入或选择使用的简历内容，包括联系方式、教育经历、工作经历、项目经历、求职意向等。简历也可能含有你自愿提供的身份证件、地址、薪资、健康状况、政治面貌、婚姻状况、家庭成员或紧急联系人等敏感信息。</li>
+        <li><strong>上传文件：</strong>当你主动上传 PDF、DOCX、TXT 或 Markdown 文件进行解析时，文件会发送到 DeepOffer 服务端提取文字并进行结构化解析。</li>
+        <li><strong>可选云同步：</strong>每份简历默认只保存在当前浏览器。只有你为某份简历明确开启云同步后，该份结构化简历和版本信息才会保存到当前 DeepOffer 账号；关闭同步会保留云端副本，删除云端副本需要单独操作。</li>
+        <li><strong>招聘页面字段信息：</strong>扩展会在当前页面本地读取表单标签、控件类型、候选项和页面结构，以识别可填写字段。开启官方 AI 字段映射时，只向服务端发送字段标签、控件类型、候选项、是否必填及网站域名哈希等映射所需信息，不发送简历字段值或页面中已经填写的内容。该请求通过登录账号认证，并与功能用量记录关联。</li>
+        <li><strong>主动页面反馈：</strong>只有在你主动反馈页面时，扩展才会发送站点域名、路径的 SHA-256 哈希、反馈原因、检测字段数、失败字段数、失败字段标签和扩展版本。反馈与登录账号关联，不包含完整路径、完整页面 DOM、简历内容或表单值。</li>
+        <li><strong>基础服务日志：</strong>访问服务时，服务器可能记录请求 IP 地址、请求时间、接口路径与响应状态等技术信息，用于网络安全、故障排查和服务运行维护。</li>
+        <li><strong>会员与用量信息：</strong>账号的会员状态、功能额度、用量请求标识和结算状态，用于展示权益、执行限额和恢复被网络中断的额度结算。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 信息如何使用</h2>
+      <p>上述信息仅用于以下目的：</p>
+      <ul>
+        <li>完成账号登录、令牌刷新及账号安全校验；</li>
+        <li>解析你主动上传的简历，并将结构化结果返回扩展；</li>
+        <li>仅在你为某份简历开启云同步后，在当前账号的网页和插件之间同步该份结构化简历，并处理版本冲突；</li>
+        <li>在招聘页面识别字段并执行你主动发起的辅助填写；</li>
+        <li>在你开启官方 AI 字段映射后，判断难以用本地规则识别的字段；</li>
+        <li>计算会员权益与功能额度，处理失败重试和用量一致性；</li>
+        <li>处理你主动提交的页面反馈，改进网站适配与排查故障；</li>
+        <li>防止滥用、保障服务安全并履行适用的法律义务。</li>
+      </ul>
+      <p>我们不会出售你的个人信息，不会将这些信息用于广告画像，也不会收集你的浏览历史用于与网申辅助无关的目的。</p>
+    </section>
+
+    <section>
+      <h2>4. 本地存储与服务端处理</h2>
+      <ul>
+        <li><strong>浏览器本地：</strong>结构化简历、当前选择、设置、登录令牌、逐份简历的云同步连接、待结算请求、待发送的主动反馈及必要短期缓存保存在浏览器扩展存储中。本地简历可在扩展中导出或清空；退出登录用于清除登录状态，不等同于删除简历、反馈队列或服务端记录。其他队列与缓存按功能处理需要保留或清理，卸载后的实际清理行为也受浏览器机制影响。</li>
+        <li><strong>简历解析：</strong>上传文件在服务端和独立解析节点中临时处理。当前解析流程先从文件提取文字，再调用 AI 模型生成结构化结果；不支持扫描件或图片简历 OCR。解析节点中的结构化结果及错误内容约保留 1 小时后清除；为防止同一请求被重复执行，可能继续保留不含简历内容的请求标识和状态。</li>
+        <li><strong>简历云同步：</strong>只有你为单份简历明确开启后，结构化数据才会保存到当前账号。扩展仅在简历列表页处于可见且联网状态时约每 30 秒检查同步，也可由你点击“立即同步”；关闭扩展页面后没有常驻简历同步任务。两端同时修改时会提示冲突，选择云端版前会先保留本机副本。</li>
+        <li><strong>其他服务端记录：</strong>账号、会员与额度账本、主动反馈以及依法需要留存的交易或安全记录，会在实现相应用途、处理你的删除请求和履行适用法律义务所需的期间保存。不同记录的保存期限可能不同。</li>
+      </ul>
+      <p class="muted">清除扩展本地简历不会自动删除已同步的云端副本，也不会删除服务端的账号、用量、反馈或交易记录。云端副本可在对应简历的同步管理中单独删除。备份中的记录可能在备份轮换时清除；在此期间限制访问，不作为日常业务数据使用，无法承诺所有备份立即同步删除。</p>
+    </section>
+
+    <section>
+      <h2>5. AI 处理与服务提供方</h2>
+      <p>
+        简历解析会把从文件中提取的文字发送给 AI 模型服务进行结构化处理。
+        当前主要使用硅基流动提供的 <code>Qwen/Qwen3-VL-32B-Instruct</code>，
+        并可能在主服务不可用时使用 <code>DeepSeek-V3.2</code> 作为备用。
+        服务提供方会为完成模型推理而处理相应输入。
+      </p>
+      <p>
+        官方 AI解析默认关闭。你可以在“账号 → 高级设置”中主动开启或关闭。开启后，服务只处理字段标签、
+        控件类型、候选项、是否必填及域名哈希等元数据，不处理你的简历值或页面中已填写的内容。
+      </p>
+    </section>
+
+    <section>
+      <h2>6. 信息共享</h2>
+      <p>
+        为提供简历解析和 AI 能力，必要的文件文字或字段元数据可能由上述 AI 服务提供方处理。
+        我们也可能在基础设施、网络传输、安全防护或依法配合监管和司法要求时，
+        向履行相应职责所必需的服务提供方或主管机关提供必要信息。
+      </p>
+      <p>除本政策所述情形外，我们不会向无关第三方提供你的简历内容。</p>
+    </section>
+
+    <section>
+      <h2>7. 权限说明</h2>
+      <ul>
+        <li><strong>storage：</strong>在你的设备上保存简历、当前选择、设置、登录令牌以及必要的队列和缓存。</li>
+        <li><strong>alarms：</strong>定时重试尚未完成的功能额度结算，恢复因浏览器后台休眠或网络中断而未完成的结算请求，不用于周期性抓取浏览内容或执行简历云同步。</li>
+        <li><strong>网站访问权限：</strong>招聘申请表分布在不同企业与招聘系统域名，扩展需要在你打开的页面本地识别表单控件，并在你主动操作后写入简历信息。该权限不用于收集与网申辅助无关的浏览历史。</li>
+        <li><strong>DeepOffer API 访问：</strong>用于登录、令牌刷新、会员与额度查询、主动上传简历解析、用户选择的简历云同步、按需字段解析和主动页面反馈。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. 你的选择与权利</h2>
+      <ul>
+        <li>你可以不开启官方 AI解析，继续使用本地规则完成字段匹配，也可以随时在“账号 → 高级设置”中关闭。</li>
+        <li>你可以决定是否为每份简历开启云同步。关闭同步后云端副本仍保留；如需删除，可在该份简历的同步管理中单独删除云端副本。</li>
+        <li>你可以在扩展的“数据与隐私”页面导出或清空本地简历，并可通过退出登录清除当前登录状态。</li>
+        <li>你可以不上传简历文件，改为手动录入简历信息。</li>
+        <li>如需访问、更正、删除服务端个人信息或注销账号，请发送邮件至 <a href="mailto:deepoffer@126.com">deepoffer@126.com</a>。为保护账号安全，我们可能需要核验你的身份。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9. 数据安全</h2>
+      <p>
+        DeepOffer API 使用 HTTPS 传输数据，并通过账号认证与访问令牌限制接口访问。
+        我们采取与服务规模和信息敏感程度相适应的技术与管理措施，但任何网络服务都无法保证绝对安全。
+        请勿在共享设备上长期保留登录状态，并在提交网申前逐项核对填写结果。
+      </p>
+    </section>
+
+    <section>
+      <h2>10. 未成年人</h2>
+      <p>
+        本扩展面向求职与招聘申请场景。未达到所在地区法定成年年龄的用户，
+        应在监护人同意和指导下使用服务并提供个人信息。
+      </p>
+    </section>
+
+    <section>
+      <h2>11. 政策更新</h2>
+      <p>
+        当扩展功能、数据处理方式或适用规则发生变化时，我们可能更新本政策，
+        并在本页面标明新的生效日期。发生对你权益有重大影响的变化时，我们会通过合理方式提示。
+      </p>
+    </section>
+
+    <section>
+      <h2>12. 联系我们</h2>
+      <p>运营方：DeepOffer 运营团队</p>
+      <p>隐私与支持邮箱：<a href="mailto:deepoffer@126.com">deepoffer@126.com</a></p>
+    </section>
+
+    <footer>DeepOffer 网申助手浏览器扩展 · 隐私政策</footer>
+  </main>
+</body>
+</html>
